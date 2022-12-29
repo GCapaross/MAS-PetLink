@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
+    <nav class="navbar navbar-light navbar-expand-md navbar-shrink py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html"></a>
             <span style="margin-right: 18px;padding-right: 0px;margin-left: 22px;">
@@ -29,10 +29,22 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="features.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link" href="integrations.html">Loja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Área Pessoal
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="fichatecnica.html">Ficha técnica do pet</a></li>
+                          <li><a class="dropdown-item" href="consultas.html">Marcação de consultas</a></li>
+                        </ul>
+                      </div>
+                </ul>
+                <a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
+                <a class="btn btn-primary shadow ms-4" role="button" href="login.html">Login</a>
             </div>
         </div>
     </nav>
@@ -41,11 +53,11 @@
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">A melhor aplicação para si e o seu animal de quatro patas!</h1>
+                        <h1 class="display-4 fw-bold mb-5"> Bem-vindo à Petlink! A melhor aplicação para si e o seu animal de quatro patas!</h1>
                         <p class="fs-5 text-muted mb-5">Subscreva-se a nossa newsletter</p>
-                        <form class="d-flex justify-content-center flex-wrap" method="post">
+                        <form class="d-flex justify-content-center flex-wrap mb-4" method="post">
                             <div class="shadow-lg mb-3"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                            <div class="shadow-lg mb-3"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+                            <div class="shadow-lg mb-3"><button class="btn btn-primary" type="submit">Subscrever </button></div>
                         </form>
                     </div>
                 </div>
@@ -53,9 +65,6 @@
                     <div class="text-center position-relative"><img class="img-fluid" src="assets/img/illustrations/medicina-veterinaria-2443ccd82cd2089948fac3f5fa77389b839fb1ccdfa3155e8fa4ec87e1bf4e9a.jpg" style="width: 800px;padding-left: 202px;margin-left: -211px;" width="800" height="405"></div>
                 </div>
             </div>
-        </div>
-        <div class="text-center">
-            <iframe src="https://www.google.com/maps/search/veterinarios/@40.6253488,-8.6753338,13z/data=!3m1!4b1"></iframe>
         </div>
     </header>
     <section>

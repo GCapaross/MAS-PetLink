@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contacts - Petlink</title>
+    <title>Mapas - Petlink</title>
     <link href="http://www.clipartbest.com/cliparts/M9c/p4o/M9cp4ozTE.png" rel="shortcut icon">
     <meta name="description" content="Website da Petlink">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +15,41 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
+    <nav class="navbar navbar-light navbar-expand-md navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"></a><span style="margin-right: 18px;padding-right: 0px;margin-left: 22px;"><strong><span style="color: rgb(89, 175, 221);">Petlink</span></strong></span><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="features.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link" href="integrations.html">Loja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link active" href="mapas.html">Mapas</a></li>
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Área Pessoal
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="fichatecnica.html">Ficha técnica do pet</a></li>
+                          <li><a class="dropdown-item" href="consultas.html">Marcação de consultas</a></li>
+                        </div>
                 </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
+                <a class="btn btn-primary shadow ms-4" role="button" href="login.html">Login</a>
             </div>
         </div>
     </nav>
-    <div class="container; d-flex align-items-center">
-        <div class="mapouter">
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 class="display-6 fw-bold mb-4"><span class="underline">Mapas das clínicas</span></h2>
+                </div>
+                <p class="text-muted text-center">Nesta área pode consultar a localização de todas as nossas clínicas parceiras, nas regiões de Aveiro, Porto e Lisboa!</p>
+            </div>
+        </div>
+    </section>
+    <div class="container d-flex text-center mb-4" style="margin-left:170px">
+        <div class="mapouter me-4">
             <div class="gmap_canvas">
                 <iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20porto&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
                 </iframe>
@@ -40,22 +60,17 @@
                 </style>
                 </div>
             </div>
-            <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20lisboa&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
-            </iframe><a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts</a><style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
+            <div class="mapouter me-4">
+                <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20lisboa&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
+            </iframe>
+            <a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts</a><style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
                 <style>.gmap_canvas{overflow:hidden;background:none!important;height:380px;width:360px;}</style></div></div>
-            <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20aveiro&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
+            <div class="mapouter me-4">
+                <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20aveiro&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
             </iframe><a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts</a><style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
                 <style>.gmap_canvas{overflow:hidden;background:none!important;height:380px;width:360px;}</style></div></div>
     </div>
-    <section class="py-5 mt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 class="display-6 fw-bold mb-4"><span class="underline">Mapa das clínicas</span></h2>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <footer>
         <div class="container py-4 py-lg-5">
             <div class="row row-cols-2 row-cols-md-4">
