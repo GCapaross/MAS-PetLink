@@ -1,29 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Mapas - Petlink</title>
-    <link href="http://www.clipartbest.com/cliparts/M9c/p4o/M9cp4ozTE.png" rel="shortcut icon">
-    <meta name="description" content="Website da Petlink">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Registo Pet - PetLink</title>
+        <link href="http://www.clipartbest.com/cliparts/M9c/p4o/M9cp4ozTE.png" rel="shortcut icon">
+        <meta name="description" content="Website da Petlink">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"></a><span style="margin-right: 18px;padding-right: 0px;margin-left: 22px;"><strong><span style="color: rgb(89, 175, 221);">Petlink</span></strong></span><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"></a>
+            <span style="margin-right: 18px;padding-right: 0px;margin-left: 22px;">
+            <strong>
+            <span style="color: rgb(89, 175, 221);">Petlink</span></strong>
+        </span>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="subscrição.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="loja.html">Loja</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="mapas.html">Mapas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
                     <li class="dropdown">
                         <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Área Pessoal
@@ -34,57 +46,80 @@
                           <li><a class="dropdown-item" href="consultas.html">Marcação de consultas</a></li>
                           <li><a class="dropdown-item" href="registopet.html">Registo do pet</a></li>
                           <li><a class="dropdown-item" href="pets.html">Os seus pets</a></li>
-                        </div>
-                        <script>
-                            if (localStorage.getItem('currentUser') == null) {
-                                document.write('<a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>');
-                                document.write('<a class="btn btn-primary shadow ms-4" role="button" href="login.html">Login</a>');
-                            }
-                            else {
-                                document.write('<a class="btn btn-primary shadow" role="button" onclick="logout()" >Logout</a>');
-                                //say hello to the user
-                                document.write('<span class="text-muted ms-4">Hello, ' + JSON.parse(localStorage.getItem('currentUser'))+ '</span>');
-                            }
-                         </script>  
+                        </ul>
+                    
+                             
+                      </div>
+                      <script>
+                        if (localStorage.getItem('currentUser') == null) {
+                            document.write('<a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>');
+                            document.write('<a class="btn btn-primary shadow ms-4" role="button" href="login.html">Login</a>');
+                        }
+                        else {
+                            document.write('<a class="btn btn-primary shadow" role="button" onclick="logout()" >Logout</a>');
+                            //say hello to the user
+                            document.write('<span class="text-muted ms-4">Hello, ' + JSON.parse(localStorage.getItem('currentUser'))+ '</span>');
+                        }
+                     </script>  
                 </ul>
+                
             </div>
         </div>
     </nav>
-    <section class="py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 class="display-6 fw-bold mb-4"><span class="underline">Mapas das clínicas</span></h2>
+    <main class="background" style="min-height: 929px;">
+
+        <div class="container mt-5">
+
+            <div class=" col-12 espaçoFicha mt-4 " style="width: 100%; ">
+                <h4 class="margemFicha ">Nome do Animal:</h4>
+                <input id="nome" style="background-color: transparent; margin-left: 10px; width: 83%;">
+            </div>
+            <div class="row mt-2 ">
+                <div class="col-12 col-md-6 espaçoFicha ">
+                    <h4>Espécie:</h4>
+                    <input id="especie" style="background-color: transparent; margin-left: 10px; width: 85%;">
                 </div>
-                <p class="text-muted text-center">Nesta área pode consultar a localização de todas as nossas clínicas parceiras, nas regiões de Aveiro, Porto e Lisboa!</p>
+                <div class="col-12 col-md-6 espaçoFicha ">
+                    <h4> Raça:</h4>
+                    <input id="raca" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                </div>
+            </div>
+            <div class="row mt-2 ">
+                <div class="col-12 col-md-6 espaçoFicha ">
+                    <h4>Sexo:</h4>
+                    <input id="sexo" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                </div>
+                <div class="col-12 col-md-6 espaçoFicha ">
+                    <h4>Idade:</h4>
+                    <input id="idade" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                </div>
+                <br>
+                
+                <label style="margin-top: 20px;">Adicione uma foto do seu pet!
+                    <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" id="img" />
+                </label>
+                <inpu class="hidden" type="image"><div class="image " style="pointer-events:none;" id="selectedBanner" > <img style="width:200px; height :200px;" src="https://media.istockphoto.com/id/1248723171/vector/camera-photo-upload-icon-on-isolated-white-background-eps-10-vector.jpg?s=612x612&w=0&k=20&c=e-OBJ2jbB-W_vfEwNCip4PW4DqhHGXYMtC3K_mzOac0=" alt=""></div>
+                
+
+                <div>
+                    <a href="index.html" style="height: 229px; font-size: 40px;"><i class="fa fa-arrow-left" style="color: black;">Sair</i></a>
+                </div>
+            </div>
+            <div class="d-none text-danger col-form-label" style="text-align: center;" id="registoError">
+                <i class="fa fa-exclamation-triangle" style="font-size: 30px;"> Todos os campos são de preenchimento obrigatório!</i>
+            </div>
+            <div class="d-none text-success col-form-label" style="text-align: center;" id="registoSuccess">
+                <i class="fa fa-check" style="font-size: 30px;"> Registo bem sucedido!</i>
+            </div>
+            <div class="mt-4" style="text-align: center;">
+                <div>
+                    <button type="button" id="registerButton" class="btn btn-secondary">Registar</button>
+                </div>
             </div>
         </div>
-    </section>
-    <div class="container d-flex text-center mb-4" style="margin-left:170px">
-        <div class="mapouter me-4">
-            <div class="gmap_canvas">
-                <iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20porto&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
-                </iframe>
-                <a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts
-                </a>
-                    <style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
-                <style>.gmap_canvas{overflow:hidden;background:none!important;height:380px;width:360px;}
-                </style>
-                </div>
-            </div>
-            <div class="mapouter me-4">
-                <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20lisboa&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
-            </iframe>
-            <a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts</a><style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
-                <style>.gmap_canvas{overflow:hidden;background:none!important;height:380px;width:360px;}</style></div></div>
-            <div class="mapouter me-4">
-                <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=veterin%C3%A1rios%20aveiro&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 360px; height: 380px;">
-            </iframe><a href="https://technologg.com/best-saas-instagram-accounts/" style="display:none">Best Saas Instagram Accounts</a><style>.mapouter{position:relative;text-align:right;height:380px;width:360px;}</style>
-                <style>.gmap_canvas{overflow:hidden;background:none!important;height:380px;width:360px;}</style></div></div>
-    </div>
-
-    <footer>
-        <div class="container py-4 py-lg-5">
+    </main>
+    <footer class=" ">
+        <div class="container py-4 py-lg-5  ">
             <div class="row row-cols-2 row-cols-md-4">
                 <div class="col-12 col-md-3">
                     <div class="fw-bold d-flex align-items-center mb-2"><span>Petlink</span></div>
@@ -131,10 +166,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="./authentication.js"></script>
+<script src="registopet.js"></script>
 </body>
 
 </html>
