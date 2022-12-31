@@ -33,12 +33,12 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="subscrição.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
                     <li class="dropdown">
-                        <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Área Pessoal
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Registo do pet
                         </a>
                       
                         <ul class="dropdown-menu">
@@ -69,57 +69,62 @@
     <main class="background" style="min-height: 929px;">
 
         <div class="container mt-5">
-            <h1 class="text-body border-secondary mb-4 mt-4" style="font-family: Raleway, sans-serif;font-weight: bold;">Registo do pet&nbsp;</h1>
-            <div class=" col-12 espaçoFicha mt-4 " style="width: 100%; ">
-                <h4 class="margemFicha ">Nome do Animal:</h4>
-                <input id="nome" style="background-color: transparent; margin-left: 10px; width: 83%;">
+            <h1 class="text-body text-center border-secondary mb-4 mt-4" style="font-family: Raleway, sans-serif;font-weight: bold;">Registo do pet&nbsp;</h1>
+            <div class="row mt-2">
+            <div class=" col-12 col-md-6 mt-4">
+                <h4 class="ms-2">Nome:</h4>
+                <input id="nome" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 83%;">
+            </div>
+            <div class=" col-12 col-md-6 mt-4">
+                <h4 class="ms-2">Peso:</h4>
+                <input id="peso" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 83%;">
+            </div>
             </div>
             <div class="row mt-2 ">
                 <div class="col-12 col-md-6 espaçoFicha ">
-                    <h4>Espécie:</h4>
-                    <input id="especie" style="background-color: transparent; margin-left: 10px; width: 85%;">
+                    <h4 class="ms-2">Espécie:</h4>
+                    <input id="especie" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 85%;">
                 </div>
                 <div class="col-12 col-md-6 espaçoFicha ">
-                    <h4> Raça:</h4>
-                    <input id="raca" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                    <h4 class="ms-2">Raça:</h4>
+                    <input id="raca" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 90%;">
                 </div>
             </div>
             <div class="row mt-2 ">
                 <div class="col-12 col-md-6 espaçoFicha ">
-                    <h4>Sexo:</h4>
-                    <input id="sexo" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                    <h4 class="ms-2">Sexo:</h4>
+                    <input id="sexo" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 90%;">
                 </div>
                 <div class="col-12 col-md-6 espaçoFicha ">
-                    <h4>Idade:</h4>
-                    <input id="idade" style="background-color: transparent; margin-left: 10px; width: 90%;">
+                    <h4 class="ms-2">Idade:</h4>
+                    <input id="idade" class="border rounded-pill" style="background-color: transparent; margin-left: 10px; width: 90%;">
                 </div>
                 <br>
                 
                 <label style="margin-top: 20px;">Adicione uma foto do seu pet!
                     <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" id="img" />
                 </label>
-                <inpu class="hidden" type="image"><div class="image " style="pointer-events:none;" id="selectedBanner" > <img style="width:200px; height :200px;" src="https://media.istockphoto.com/id/1248723171/vector/camera-photo-upload-icon-on-isolated-white-background-eps-10-vector.jpg?s=612x612&w=0&k=20&c=e-OBJ2jbB-W_vfEwNCip4PW4DqhHGXYMtC3K_mzOac0=" alt=""></div>
+                <inpu class="hidden" type="image"><div class="image " style="pointer-events:none;" id="selectedBanner" > <img style="width:150px; height :150px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2F55-files-and-documents%2F512%2FIcon_12-512.png&f=1&nofb=1&ipt=fd47ae5145dbdf78c505d34b802e6bd4fe012b42aab633af4ce9be3e031e382a&ipo=images" alt=""></div>
                 
 
-                <div>
-                    <a href="index.html" style="height: 229px; font-size: 40px;"><i class="fa fa-arrow-left" style="color: black;">Sair</i></a>
-                </div>
+            
             </div>
             <div class="d-none text-danger col-form-label" style="text-align: center;" id="registoError">
-                <i class="fa fa-exclamation-triangle" style="font-size: 30px;"> Todos os campos são de preenchimento obrigatório!</i>
+                <i class="fa fa-exclamation-triangle" style="font-size: 30px;"></i> Todos os campos são de preenchimento obrigatório!
             </div>
             <div class="d-none text-success col-form-label" style="text-align: center;" id="registoSuccess">
                 <i class="fa fa-check" style="font-size: 30px;"> Registo bem sucedido!</i>
             </div>
             <div class="mt-4" style="text-align: center;">
                 <div>
-                    <button type="button" id="registerButton" class="btn btn-secondary">Registar</button>
+                    <button type="button" id="registerButton" class="btn btn-primary">Registar</button>
+                    <a type="button"href="index.html"class="btn btn-danger">Cancelar</a>
                 </div>
             </div>
         </div>
     </main>
     <footer class=" ">
-        <div class="container py-4 py-lg-5  ">
+        <div class="container">
             <div class="row row-cols-2 row-cols-md-4">
                 <div class="col-12 col-md-3">
                     <div class="fw-bold d-flex align-items-center mb-2"><span>Petlink</span></div>

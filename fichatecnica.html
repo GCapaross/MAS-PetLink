@@ -29,12 +29,12 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="subscrição.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
                     <li class="dropdown">
-                        <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Área Pessoal
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Ficha técnica do pet
                         </a>
                       
                         <ul class="dropdown-menu">
@@ -65,9 +65,15 @@
     <main class="background" style="min-height: 650px;">
 
         <div class="container">
-            <div class=" col-12 espaçoFicha mt-4 " style="width: 100%; ">
-                <h4 class="margemFicha ">Nome do Animal: <span data-bind="text: parameters().name"></span></h4>
+            <h1 class="text-body text-center border-secondary mb-4 mt-4" style="font-family: Raleway, sans-serif;font-weight: bold;">Ficha técnica do pet&nbsp;</h1>
+        <div class="row mt-2">
+            <div class=" col-12 col-md-6 mt-4">
+                <h4 class="">Nome: <span data-bind="text: parameters().name"></span></h4>
             </div>
+            <div class=" col-12 col-md-6 mt-4 ">
+                <h4 class="margemFicha ">Peso: <span data-bind="text: parameters().weight"></span></h4>
+            </div>
+        </div>
             <br>
             <div class="row mt-2 ">
                 <div class="col-12 col-md-6 espaçoFicha ">
