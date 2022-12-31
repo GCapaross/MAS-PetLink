@@ -57,7 +57,8 @@
                 </div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start" style="margin-right: 67px;margin-left: 71px;padding-left: 0px;padding-right: 0px;">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1" style="margin: 0px;">Registo de conta<br></span></h2>
-                    <form method="post">
+                    <form  method = "post" onsubmit="register(this); return false">
+                        <div class="mb-3"><input class="shadow-sm form-control" type="text" name="username" placeholder="Username" required=""></div>
                         <div class="mb-3"><input class="shadow-sm form-control" type="email" name="email" placeholder="Email" required=""></div>
                         <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Password"></div>
                         <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repeat Password"></div>
@@ -124,6 +125,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="./authentication.js"></script>
+
 </body>
 
 </html>

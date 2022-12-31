@@ -33,7 +33,19 @@
                           <li><a class="dropdown-item" href="consultas.html">Marcação de consultas</a></li>
                         </ul>
                       </div>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
+                      <script>
+                        if (localStorage.getItem('currentUser') == null) {
+                            document.write('<a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>');
+                            document.write('<a class="btn btn-primary shadow ms-4" role="button" href="login.html">Login</a>');
+                        }
+                        else {
+                            document.write('<a class="btn btn-primary shadow" role="button" onclick="logout()" >Logout</a>');
+                            //say hello to the user
+                            document.write('<span class="text-muted ms-4">Hello, ' + JSON.parse(localStorage.getItem('currentUser'))+ '</span>');
+                        }
+                         
+                    </script>
+                </ul>
             </div>
         </div>
     </nav>
@@ -43,7 +55,7 @@
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/pexels-pixabay-45201.jpg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1"><strong>Login</strong><br></span></h2>
-                    <form method="post">
+                    <form  method = "post" onsubmit="login(this); return false">
                         <div class="mb-3"><input class="shadow form-control" type="email" name="email" placeholder="Email"></div>
                         <div class="mb-3"><input class="shadow form-control" type="password" name="password" placeholder="Password"></div>
                         <div class="mb-5"><button class="btn btn-primary shadow" type="submit">Log in</button></div>
@@ -103,6 +115,7 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/startup-modern.js"></script>
+    <script src="./authentication.js"></script>
 </body>
 
 </html>
