@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Os seus pets - PetLink</title>
+    <title>Os meus pets - PetLink</title>
     <link href="http://www.clipartbest.com/cliparts/M9c/p4o/M9cp4ozTE.png" rel="shortcut icon">
     <meta name="description" content="Website da Petlink">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,19 +29,19 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="subscrição.html">Subscrição</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
                     <li class="dropdown">
-                        <a class="btn dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Área Pessoal
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Os meus pets
                         </a>
                       
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="fichatecnica.html">Ficha técnica do pet</a></li>
                           <li><a class="dropdown-item" href="consultas.html">Marcação de consultas</a></li>
                           <li><a class="dropdown-item" href="registopet.html">Registo do pet</a></li>
-                          <li><a class="dropdown-item" href="pets.html">Os seus pets</a></li>
+                          <li><a class="dropdown-item" href="pets.html">Os meus pets</a></li>
                         </ul>
                     
                              
@@ -65,6 +65,7 @@
     <main class="background" style="min-height:600px;">
 
         <div class="container">
+            <h1 class="text-body border-secondary mb-4 mt-4" style="font-family: Raleway, sans-serif;font-weight: bold;">Os meus pets&nbsp;</h1>
             <div class="row d-flex justify-content-center" style="margin-top: 20px;">
                 <!-- ko if: animais().length > 0 -->
                 <table id="driverTable" class="table table-striped table-sm small">
@@ -86,18 +87,19 @@
                             <td class="align-middle" data-bind="text:race"></td>
                             <td class="align-middle" data-bind="text:species"></td>
                             <td class="text-end">
-                                <a class="btn btn-default btn-light btn-sm border-0" style="background-color: transparent;" data-bind="attr: { href: 'detalhes.html?id=' + JSON.stringify($data) }"><i class="fa fa-eye" title="Selecione para ver detalhes"></i></a>
+                                <a class="btn btn-default btn-light btn-sm border-0" style="background-color: transparent;" data-bind="attr: { href: 'fichatecnica.html?id=' + JSON.stringify($data) }"><i class="fa fa-eye" title="Selecione para ver fichatecnica"></i></a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <!-- /ko -->
                 <!-- ko ifnot: animais().length > 5 -->
-                <div class="card border-4" style="width: 20rem; text-align: center; border-color: black; background-color: rgb(211, 211, 211); height: 300px;">
-                    <a href="registopet.html" class="card-text" style="margin-top: 60px; color:black"><i class="fa fa-plus" style="font-size: 100px;"></i><br><p style="font-size: 50px;">Adicionar Pet</p></a>
-                </div>
                 <!-- /ko -->
             </div>
+            <div class="text-end">
+            <a class="btn btn-primary" href="registopet.html"><i class="fa fa-paw"></i> Adicionar Pet</a>
+        </div>
+        </a>
         </div>
     </main>
     <footer>
