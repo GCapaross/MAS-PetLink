@@ -20,7 +20,7 @@
             <a class="navbar-brand d-flex align-items-center" href="index.html"></a>
             <span style="margin-right: 18px;padding-right: 0px;margin-left: 22px;">
             <strong>
-            <span style="color: rgb(89, 175, 221);">Petlink</span></strong>
+                <a href="index.html" style="color: rgb(89, 175, 221); text-decoration: none;">Petlink</a></strong>
         </span>
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
             <span class="visually-hidden">Toggle navigation</span>
@@ -60,6 +60,7 @@
             </div>
         </div>
     </nav>
+    
     <header class="pt-5">
         <div class="container pt-4 pt-xl-5">
             <div class="row pt-5">
@@ -135,6 +136,102 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Popup chat window -->
+
+    <!-- chat open -->
+    <div class="chat-bar-open" id="chat-open">
+      <button
+        id="chat-open-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatOpen()"
+      >
+        <img src="https://pic.onlinewebfonts.com/svg/img_547265.png" alt="Sparrow Bird image" style="align-items: left;">
+      </button>
+    </div>
+
+    <!-- chat close -->
+    <div class="chat-bar-close" id="chat-close">
+      <button
+        id="chat-close-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatClose()"
+      >
+        <i class="material-icons-outlined"> close </i>
+      </button>
+    </div>
+
+    <!-- chat-window 1 -->
+    <div class="chat-window" id="chat-window1">
+      <div class="hi-there">
+        <p class="p1">Olá 
+                <script> var user = localStorage.getItem("currentUser") == null ? 
+                    "Usuário" : localStorage.getItem("currentUser").replace(/['"]+/g, ''); document.write(user);
+                </script>!
+        </p>
+        <br />
+        <p class="p2">Olá, pergunte-nos alguma coisa...<br />Feedback.</p>
+      </div>
+      <div class="start-conversation">
+        <h1>Comece uma conversa</h1>
+        <br />
+        <p>Neste momento não há veterinários online</p>
+        <button
+          class="new-conversation"
+          type="button"
+          onclick="openConversation()"
+        >
+          <span>Nova conversa</span
+          ><i class="material-icons-outlined"> enviar </i>
+        </button>
+      </div>
+    </div>
+
+    <!-- chat chat-window 2 -->
+    <div class="chat-window2" id="chat-window2">
+      <div class="message-box" id="messageBox">
+        <div class="hi-there">
+            <p class="p1">Olá 
+                    <script> var user = localStorage.getItem("currentUser") == null ? 
+                        "Usuário" : localStorage.getItem("currentUser").replace(/['"]+/g, ''); document.write(user);
+                    </script>!
+            </p>
+          <br />
+          <p class="p2">Neste momento não há veterinários online</p>
+        </div>
+        <div class="first-chat">
+          <p>Olá, preciso de ajuda....</p>
+          <div class="arrow"></div>
+        </div>
+        <div class="second-chat">
+          <div class="circle"></div>
+          <p>Atualmente não temos veterinários ativos para resposta...</p>
+          <div class="arrow"></div>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="write-reply">
+          <input
+            class="inputText"
+            type="text"
+            id="textInput"
+            placeholder="Write a reply..."
+          />
+        </div>
+        <div class="send-button">
+          <button
+            type="submit"
+            class="send-message"
+            id="send"
+            onclick="userResponse()"
+          >
+            <i class="material-icons-outlined"> send </i>
+          </button>
+        </div>
+      </div>
+
         </div>
     </section>
     <section></section>
@@ -187,11 +284,28 @@
                 </ul>
             </div>
         </div>
+
+
+
+
+
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="./authentication.js"></script>
+
+<link rel="stylesheet" href="assets/css/chat.css" />
+<link
+    rel="Tab icon"
+    href="assets/images/sparrow favicon.png"
+    type="image/png"
+/>
+<link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+/>
+<script src="assets/js/chat.js"></script>
 
 </body>
 
