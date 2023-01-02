@@ -64,36 +64,41 @@
     </nav>
     <main class="background" style="min-height: 650px;">
 
-        <div class="container">
+        <div class="container border rounded " style="padding:40px">
             <h1 class="text-body text-center border-secondary mb-4 mt-4" style="font-family: Raleway, sans-serif;font-weight: bold;">Ficha técnica do pet&nbsp;</h1>
         <div class="row mt-2">
-            <div class=" col-12 col-md-6 mt-4">
+            <div class=" col-12 col-md-6 mt-4 border rounded-pill">
                 <h4 class="">Nome: <span data-bind="text: parameters().name"></span></h4>
             </div>
-            <div class=" col-12 col-md-6 mt-4 ">
+            <div class=" col-12 col-md-6 mt-4 border rounded-pill">
                 <h4 class="margemFicha ">Peso: <span data-bind="text: parameters().weight"></span></h4>
             </div>
         </div>
             <br>
             <div class="row mt-2 ">
-                <div class="col-12 col-md-6 espaçoFicha ">
+                <div class="col-12 col-md-6 border rounded-pill">
                     <h4>Espécie: <span data-bind="text: parameters().species"></span></h4>
                 </div>
                 <br>
-                <div class="col-12 col-md-6 espaçoFicha ">
+                <div class="col-12 col-md-6 border rounded-pill ">
                     <h4> Raça: <span data-bind="text: parameters().race"></span></h4>
                 </div>
             </div>
             <br>
             <div class="row mt-2 ">
-                <div class="col-12 col-md-6 espaçoFicha ">
+                <div class="col-12 col-md-6 border rounded-pill ">
                     <h4>Sexo: <span data-bind="text: parameters().gender"></span></h4>
                 </div>
-                <div class="col-12 col-md-6 espaçoFicha ">
+                <div class="col-12 col-md-6 border rounded-pill ">
                     <h4>Idade: <span data-bind="text: parameters().age"></span></h4>
                 </div>
             </div>
-
+            <div class="row mt-3">
+            <div class="container border rounded" style="height:200px; width:100%">
+                <h4 class="mt-2">Histórico clínico</h4>
+                <span data-bind="text: parameters().name"></span> ainda não tem histórico clínico. Contacte uma das nossas clínicas para que o seu pet possa ser acompanhado.
+            </div>
+            </div>
         </div>
     </main>
     <footer>
