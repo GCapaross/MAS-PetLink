@@ -7,6 +7,7 @@ $(document).ready(function () {
             var sexo = document.getElementById("sexo").value;
             var idade = document.getElementById("idade").value;
             var peso = document.getElementById("peso").value;
+            var img = document.getElementById("img").value;
             var registoError = document.getElementById("registoError");
             var registoSuccess = document.getElementById("registoSuccess");
 
@@ -27,6 +28,7 @@ $(document).ready(function () {
                 gender: $("#sexo").val(),
                 race: $("#raca").val(),
                 weight: $("#peso").val(),
+                img: $("#img").val(),
             }
             if (JSON.parse(window.localStorage.getItem('animais')) == null) {
                 window.localStorage.setItem('animais', '[]');
