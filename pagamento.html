@@ -195,33 +195,25 @@
 
                     <div class="col-12 col-md-6 col-lg-6">
                         <h3>Pagamento <i class="fa fa-credit-card" aria-hidden="true"></i></h3>
-                        <label for="fname">Escolher método</label>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col-3">
-                                <label>
-                                    <input type="radio" name="test" value="small" checked>
-                                    <img src="https://1361832452.rsc.cdn77.org/gesa/files/2560px-MasterCard_Logo.svg__0.png?1626945992" alt="Option 1">
-                                </label>
-                            </div>
-                            <div class="col-3">
-                                <label>
-                                    <input type="radio" name="test" value="small">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Old_Visa_Logo.svg" alt="Option 1">
-                                </label>
-                            </div>
-                            <div class="col-3">
-                                <label>
-                                    <input type="radio" name="test" value="small">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_MBWay.svg/1200px-Logo_MBWay.svg.png" alt="Option 1">
-                                </label>
-                            </div>
-                            <div class="col-3">
-                                <label>
-                                    <input type="radio" name="test" value="small">
-                                    <img src="https://logosmarcas.net/wp-content/uploads/2020/04/PayPal-Logo.png" alt="Option 1">
-                                </label>
-                            </div>
+                        <label for="fname">Escolher método de pagamento</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento1" required>
+                            <label class="form-check-label" for="pagamento1" ><i class="fa fa-cc-visa" aria-hidden="true"></i> Visa Payment</label>
                         </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento2" required>
+                            <label class="form-check-label" for="pagamento2" ><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento3" required>
+                            <label class="form-check-label" for="pagamento3" ><i class="fa fa-cc-mastercard" aria-hidden="true"></i> Master Card</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento4">
+                            <label class="form-check-label" for="pagamento4" ><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Multibanco</label><br>
+                            <div class="invalid-feedback small"><i class="fa fa-warning"></i> Escolha uma das opções.</div>
+                        </div>
+                        <br>
                         <div class="row">
                             <div class="col-8">
                                 <label for="ccnum">Número do cartão</label>
